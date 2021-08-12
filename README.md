@@ -1,5 +1,5 @@
 # Warframe-Daily-Login
-Do you keep forgetting to log into Warframe every day?
+Do you keep forgetting to log into Warframe every day?\n
 Are you tired of how long it takes to log into Warframe?
 This light-weight application automatically logs a user into Warframe every day at a specified time.
 Just pick a time and Warframe-Daily-Login will log you in each day at that time!
