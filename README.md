@@ -10,7 +10,7 @@ Using the application is easy. Just tell it where your launcher is, what your pa
 ![WarframeDailyLogin_Y4ICM1SiNt](https://user-images.githubusercontent.com/23323883/129253897-1c04e412-532c-446f-8f82-69898b862b6a.png)  
 The application will keep track of all successful logins it has completed.  
 ![WarframeDailyLogin_1GX6Di2yo4](https://user-images.githubusercontent.com/23323883/129254572-66ec33a6-f46a-4c0d-a93a-b018c1eaba31.png)  
-Customize the application to run efficiently on yoru machine!  
+Customize the application to run efficiently on your machine!  
 ![WarframeDailyLogin_RukCRZlGrt](https://user-images.githubusercontent.com/23323883/129254582-b537a0ac-e0cc-49ab-af33-d272056ceefa.png)  
 
 
