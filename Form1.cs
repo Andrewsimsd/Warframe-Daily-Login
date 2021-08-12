@@ -105,16 +105,19 @@ namespace WarframeDailyLogin
         }
         private void ReadLogFile()
         {
-            using (StreamReader reader = new StreamReader(logFileName))
+            if (File.Exists(logFileName))
             {
-                string line;
-                string dateString;
-                DateTime date;
-                while ((line = reader.ReadLine()) != null)
+                using (StreamReader reader = new StreamReader(logFileName))
                 {
-                    dateString = line.Split('-').First().Trim();
-                    date = DateTime.Parse(dateString);
-                    datesLogggedIn.Add(date);
+                    string line;
+                    string dateString;
+                    DateTime date;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        dateString = line.Split('-').First().Trim();
+                        date = DateTime.Parse(dateString);
+                        datesLogggedIn.Add(date);
+                    }
                 }
             }
         }
