@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace WarframeDailyLogin
 {
     public partial class Form1 : Form
     {
+        [DllImport("USER32.DLL", CharSet = CharSet.Unicode)]
+        public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+        [DllImport("USER32.DLL")]
+        public static extern bool SetForegroundWindow(IntPtr hWnd);
         public Form1()
         {
             InitializeComponent();
@@ -35,12 +41,9 @@ namespace WarframeDailyLogin
             warframe.StartInfo.FileName = this.tbGamePath.Text;
             warframe.EnableRaisingEvents = true;
             warframe.Start();
-            int launcherDelaySeconds;
-            int GameDelaySeconds;
-            int ExitDelaySeconds;
-            bool launcherPass = int.TryParse(tbLauncherLoadTime.Text, out launcherDelaySeconds);
-            bool gamePass = int.TryParse(tbGameLoadTime.Text, out GameDelaySeconds);
-            bool exitPass = int.TryParse(tbExitWaitTime.Text, out ExitDelaySeconds);
+            bool launcherPass = int.TryParse(tbLauncherLoadTime.Text, out int launcherDelaySeconds);
+            bool gamePass = int.TryParse(tbGameLoadTime.Text, out int GameDelaySeconds);
+            bool exitPass = int.TryParse(tbExitWaitTime.Text, out int ExitDelaySeconds);
             if (!(launcherPass & gamePass & exitPass))
             {
                 MessageBox.Show("One or more wait times are invalid.", "Invalid Time", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -79,21 +82,18 @@ namespace WarframeDailyLogin
 
         private void Login()
         {
-            SendKeys.Send(this.tbPassword.Text);
-            SendKeys.Send("{ENTER}");
-            //MouseOperations.SetCursorPosition(1526, 970);
-            //MouseOperations.MouseEvent(MouseOperations.MouseEventFlags.LeftDown);
-            //MouseOperations.MouseEvent(MouseOperations.MouseEventFlags.LeftUp);
+            IntPtr calcWindow = FindWindow(null, "Warframe");
+            if (SetForegroundWindow(calcWindow))
+                SendKeys.Send(this.tbPassword.Text);
+                SendKeys.Send("{ENTER}");
         }
         private void ClickStart()
         {
-            int x;
-            int y;
-            bool xPass = int.TryParse(tbLauncherX.Text, out x);
-            bool yPass = int.TryParse(tbLauncherY.Text, out y);
+            bool xPass = int.TryParse(tbLauncherX.Text, out int x);
+            bool yPass = int.TryParse(tbLauncherY.Text, out int y);
             if (xPass & yPass)
             {
-                MouseOperations.SetCursorPosition(1526, 970);
+                MouseOperations.SetCursorPosition(x, y);
                 MouseOperations.MouseEvent(MouseOperations.MouseEventFlags.LeftDown);
                 MouseOperations.MouseEvent(MouseOperations.MouseEventFlags.LeftUp);
             }
