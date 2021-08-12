@@ -1,8 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <configuration>
-    <startup> 
-        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
-    </startup>
 	<appSettings>
 		<add key="GamePath" value="C:\Program Files (x86)\Steam\steamapps\common\Warframe\Tools\Launcher.exe" />
 		<add key="LauncherX" value="1526" />
@@ -14,8 +11,5 @@
 		<add key="LoginTimeHours" value="04" />
 		<add key="LoginTimeMinutes" value="00" />
 		<add key="LoginTimeSeconds" value="00" />
-		<add key="LoginCheckHours" value="00" />
-		<add key="LoginCheckMinutes" value="15" />
-		<add key="LoginCheckSeconds" value="00" />
 	</appSettings>
 </configuration>
