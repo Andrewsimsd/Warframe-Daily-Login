@@ -7,11 +7,11 @@ Just pick a time and Warframe-Daily-Login will log you in each day at that time!
 **Warframe-Daily-Login never saves your password!**
 # USAGE
 Using the application is easy. Just tell it where your launcher is, what your password is, and select a time to log in each day!  
-![WarframeDailyLogin_zMPY1ATvgb](https://user-images.githubusercontent.com/23323883/129258080-d085fa0e-1baa-466b-92a3-a347f33e6b7e.png)  
+![WarframeDailyLogin_OxbkC0Y34R](https://user-images.githubusercontent.com/23323883/129301556-a2e4f4df-280c-45f6-93a8-45b906314bc6.png)  
 The application will keep track of all successful logins it has completed.  
-![WarframeDailyLogin_8MT3punHxY](https://user-images.githubusercontent.com/23323883/129258089-f31924f2-a1f6-4c1e-a73e-f74aa268393a.png)  
+![WarframeDailyLogin_shCPDHam6d](https://user-images.githubusercontent.com/23323883/129301591-a1e4cc4c-2a78-4783-965d-446f7ccfc5bb.png)  
 Customize the application to run efficiently on your machine!  
-![WarframeDailyLogin_ja2ZGxFz17](https://user-images.githubusercontent.com/23323883/129258096-6b009b90-51d6-450c-8df5-e6d4216147ab.png)  
+![WarframeDailyLogin_N64bXnI5MF](https://user-images.githubusercontent.com/23323883/129301614-5e3792df-aaaf-435c-9795-1e373c2e5b2e.png)  
 
 <a target="_blank" href="https://icons8.com/icon/4jr2LWG6xhkd/history-book"></a> icons by <a target="_blank" href="https://icons8.com">Icons8</a>
 
