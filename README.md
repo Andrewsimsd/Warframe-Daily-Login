@@ -12,7 +12,8 @@ The application will keep track of all successful logins it has completed.
 ![WarframeDailyLogin_shCPDHam6d](https://user-images.githubusercontent.com/23323883/129301591-a1e4cc4c-2a78-4783-965d-446f7ccfc5bb.png)  
 Customize the application to run efficiently on your machine!  
 ![WarframeDailyLogin_N64bXnI5MF](https://user-images.githubusercontent.com/23323883/129301614-5e3792df-aaaf-435c-9795-1e373c2e5b2e.png)  
-
+# Special Thanks
+@multiplex55 - debugging, inspiration, and just overall a great guy.
 <a target="_blank" href="https://icons8.com/icon/4jr2LWG6xhkd/history-book"></a> icons by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 
